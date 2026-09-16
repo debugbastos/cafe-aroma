@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Aroma | O ritual entre o tempo e o café</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- textura de papel -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- indicador fixo do estágio da extração -->
+<div class="stage-badge" id="stageBadge" aria-hidden="true">
+  <span class="stage-time">00:00</span>
+  <span class="stage-name">Infusão</span>
+</div>
+
+<!-- trilha de gotejamento (assinatura visual) -->
+<div class="drip-rail" aria-hidden="true">
+  <div class="drip-rail-track">
+    <div class="drip-rail-fill" id="dripFill"></div>
+  </div>
+  <div class="drip-rail-drop" id="dripDrop"></div>
+
+  <div class="drip-tick" data-section="historia" style="--pos:6%">
+    <span class="tick-time">00:00</span>
+    <span class="tick-label">Infusão</span>
+  </div>
+  <div class="drip-tick" data-section="experiencia" style="--pos:36%">
+    <span class="tick-time">00:45</span>
+    <span class="tick-label">Despejo</span>
+  </div>
+  <div class="drip-tick" data-section="universo" style="--pos:64%">
+    <span class="tick-time">02:30</span>
+    <span class="tick-label">Extração</span>
+  </div>
+  <div class="drip-tick" data-section="contato" style="--pos:94%">
+    <span class="tick-time">04:00</span>
+    <span class="tick-label">Xícara</span>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Café Aroma</div>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#historia">História</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#universo">Universo</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <p class="ticket">V60 <span>·</span> 92°C <span>·</span> RATIO 1:16</p>
+    <h1>O café não se <em>apressa.</em><br>Ele acontece <em>no seu tempo.</em></h1>
+    <p class="hero-lede">Cafés especiais extraídos com técnica e paciência — cada xícara é uma pausa desenhada para durar exatamente o tempo que precisa durar.</p>
+    <a href="#historia" class="btn">Ver o ritual</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e" alt="Café artesanal sendo preparado">
+    <span class="polaroid-tag">Lote 014 · torra média</span>
+  </div>
+</section>
+
+<!-- TICKER DE ORIGENS -->
+<div class="origin-ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>ETIÓPIA</span><span>·</span><span>COLÔMBIA</span><span>·</span><span>QUÊNIA</span><span>·</span><span>BRASIL</span><span>·</span><span>RUANDA</span><span>·</span><span>GUATEMALA</span><span>·</span>
+    <span>ETIÓPIA</span><span>·</span><span>COLÔMBIA</span><span>·</span><span>QUÊNIA</span><span>·</span><span>BRASIL</span><span>·</span><span>RUANDA</span><span>·</span><span>GUATEMALA</span><span>·</span>
+  </div>
+</div>
+
+<!-- HISTÓRIA — INFUSÃO -->
+<section class="history" id="historia">
+  <div class="section-header">
+    <span class="stamp">00:00 · Infusão</span>
+    <h2>Nossa história</h2>
+  </div>
+
+  <div class="history-grid">
+    <div class="history-image">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24" alt="Interior da cafeteria">
+    </div>
+
+    <div class="history-text">
+      <h3>Tudo começa com a água parada por 30 segundos.</h3>
+      <p>O Café Aroma nasceu de uma teimosia simples: não apressar nada. Antes do despejo, o pó descansa — libera gás, respira, se prepara. É nessa pausa que moramos.</p>
+      <p>Selecionamos grãos direto de produtores que respeitamos, acompanhamos cada torra e tratamos o preparo como o que ele é: um método, não uma tarefa.</p>
+
+      <div class="numbers">
+        <div class="dial"><strong>2015</strong><span>Fundação</span></div>
+        <div class="dial"><strong>2500+</strong><span>Clientes</span></div>
+        <div class="dial"><strong>100%</strong><span>Artesanal</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIÊNCIA — DESPEJO -->
+<section class="experience" id="experiencia">
+  <div class="section-header">
+    <span class="stamp">00:45 · Despejo</span>
+    <h2>O café como experiência</h2>
+  </div>
+
+  <div class="experience-list">
+    <div class="experience-item">
+      <span class="exp-index">01</span>
+      <h3>Aroma</h3>
+      <p>Notas que sobem antes do primeiro gole e ficam na memória depois do último.</p>
+    </div>
+
+    <div class="experience-item">
+      <span class="exp-index">02</span>
+      <h3>Origem</h3>
+      <p>Grãos rastreáveis, escolhidos por quem planta — não só por quem vende.</p>
+    </div>
+
+    <div class="experience-item">
+      <span class="exp-index">03</span>
+      <h3>Método</h3>
+      <p>Peso, tempo e temperatura medidos como receita — porque são.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA — EXTRAÇÃO -->
+<section class="universe" id="universo">
+  <div class="section-header">
+    <span class="stamp">02:30 · Extração</span>
+    <h2>Nosso universo</h2>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-main">
+      <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13" alt="Xícara de café especial">
+    </div>
+    <div class="gallery-small">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Preparação do café">
+    </div>
+    <div class="gallery-small rotated">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Café especial servido">
+    </div>
+    <div class="gallery-main second">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31" alt="Balcão da cafeteria">
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section class="process">
+  <div class="section-header">
+    <span class="stamp">Receita</span>
+    <h2>O ritual do café</h2>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <span>01</span>
+      <div>
+        <h3>Seleção</h3>
+        <p>Escolha dos melhores grãos, lote a lote.</p>
+      </div>
+    </div>
+    <div class="step">
+      <span>02</span>
+      <div>
+        <h3>Torra</h3>
+        <p>Curva de torra ajustada para revelar cada origem.</p>
+      </div>
+    </div>
+    <div class="step">
+      <span>03</span>
+      <div>
+        <h3>Preparo</h3>
+        <p>Água, tempo e mão certa em cada xícara.</p>
+      </div>
+    </div>
+    <div class="step">
+      <span>04</span>
+      <div>
+        <h3>Momento</h3>
+        <p>A pausa que você guarda pro resto do dia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRASE -->
+<section class="quote">
+  <h2>"Existe café bom.<br>E existe café que vira memória."</h2>
+  <p>Café Aroma</p>
+</section>
+
+<!-- CONTATO — XÍCARA -->
+<section class="contact" id="contato">
+  <div class="section-header center">
+    <span class="stamp">04:00 · Xícara</span>
+    <h2>Visite o Café Aroma</h2>
+  </div>    
+
+  <div class="receipt">
+    <div class="receipt-row"><span>Endereço</span><span>Rua da Cafeteria, 123</span></div>
+    <div class="receipt-row"><span>Horário</span><span>Seg – Sáb · 08h às 19h</span></div>
+    <div class="receipt-row"><span>Instagram</span><span>@cafearoma</span></div>
+    <div class="receipt-divider"></div>
+    <p class="receipt-thanks">obrigado pela visita ☕</p>
+  </div>
+</section>
+
+<footer>
+  <h2>Café Aroma</h2>
+  <p>Um momento. Uma história.</p>
+  <span>© 2026 Café Aroma</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
